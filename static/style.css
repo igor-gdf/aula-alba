@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* UNIVERSAL STYLES BEGINNING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body{
+  display: flex;;
+}
+.geral{
+  padding: 32px 214px ;
+}
+:root {
+  --cor-azul: #0095D9;
+  --cor-cinza: #555;
+  --cor-branca: #FFF;
+  --cor-cinza-fundo: #333;
+  --Gray-2: #4F4F4F;
+  --Gray-3: #828282;
+  --Gray-5: #E0E0E0;
+}
+
+/* UNIVERSAL STYLES END */
+
+/* SIDEBAR STYLES BEGINNING */
+.menu {
+  display: flex;
+  width: 297px;
+  height: 100%;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-right: 1px solid #BDBDBD;
+  position: relative;
+}
+.menu-nav{
+  display: flex;
+  width: 201px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.menu-item, .menu-item-2{
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+}
+.menu-item-2{
+  background: #F5F5F5;
+}
+.head-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.perfil {
+  display: flex;
+  gap: 8px;
+}
+.config-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11.429px;
+  position: absolute;
+  right: 18.286px;
+  top: 32px;
+  right: 32px;
+}
+.sair{
+  color: #FF161F;
+}
+.modalidades{
+  color: #0095D9;
+}
+/* SIDEBAR STYLES END */
+
+
+
+/* HEADER STYLES BEGINING */
+.breadcrumb {
+  display: flex;
+  padding: 0 10px;
+  gap: 8px;
+}
+
+.modalidadesheader, .detalhamentodamodalidade {
+  font-size: 12px;
+}
+
+.modalidadesheader {
+  color: var(--cor-azul);
+  font-weight: 600;
+}
+
+.detalhamentodamodalidade {
+  color: var(--cor-cinza);
+  font-weight: 400;
+}
+
+.down {
+  display: flex;
+  width: 1152px;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalidade {
+  color: var(--cor-cinza-fundo);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rigth {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.btn-1, .btn-2 {
+  display: flex;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.btn-1 {
+  border: 1px solid var(--cor-azul);
+  background: var(--cor-branca);
+  cursor: pointer;
+}
+
+.btn-2 {
+  background: var(--cor-azul);
+  cursor: pointer;
+}
+
+.gerarrelatorio, .cadastrarmodalidade {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.gerarrelatorio {
+  color: var(--cor-azul);
+}
+
+.cadastrarmodalidade {
+  color: var(--cor-branca);
+}
+/* HEADER STYLES END */
+
+
+/* SECTION STYLE BEGINING */
+.section {
+  display: flex; /* Utiliza um modelo de layout flexível */
+  gap: 20px; /* Adiciona espaço entre a barra lateral e a seção */
+  margin-left: 250px; /* Ajusta a margem à esquerda para acomodar a barra lateral */
+}
+
+
+.table-filter{
+  display: flex;
+  width: 1152px;
+  padding: 16px 30px;
+  gap: 8px;
+  border-radius: 8px 8px 0px 0px;
+  background: #F4F4F4;
+  align-items: center ;
+}
+
+.field{
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  background: var(--Primary-White, #FFF);
+}
+
+.lupa{
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.searchcategoria{
+  display: flex;
+  padding: 10px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Gray-3, #828282);
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+.searchcategoria:focus{
+  outline: none;
+}
+
+.filtrarc{
+  display: flex;
+  padding: 10px 8px;
+  gap: 10px;
+  color: var(--Gray-1, #333);
+  font-size: 14px;
+  font-weight: 400
+}
+
+.filtrarc2{
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.selecionarcurso{
+  display: flex;
+  padding: 10px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--Gray-1, #333);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.selecseta2{
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.table{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid (#EEE);
+}
+
+.table-header{
+  display: flex;
+  width: 1152px;
+  padding: 16px 30px;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #BBB;
+}
+
+.tableh3{
+  color: var(--Gray-1, #333);
+  font-size: 14px;
+  font-weight: 700;
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.row{
+  display: flex;
+  width: 1152px;
+  padding: 8px 30px;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #EEE;
+}
+.logosport{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.esporte, .inscritos{
+  display: flex;
+  width: 220px;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: var(--Gray-2, #4F4F4F);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.type{
+  display: flex;
+  width: 170px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.individual{
+  display: flex;
+  padding: 2px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--A1, #0095D9);
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: #E9F8FF;
+}
+.inscritos{
+  width: 291px;
+  margin-left: 80px;
+}
+/* SECTION STYLE END */
+
+/* INFO CARD STYLE BEGINING */  
+
+info-card{
+  display: flex;
+  width: 172px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  background: var(--Primary-White, #FFF);
+}
+.sportlogo{
+  width: 100px;
+  height: 100px;
+}
+
+.type{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.tipotext{
+  color: var(--Gray-1, #333);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.inscricoes{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+.inscricoestext{
+  color: var(--Gray-1, #333);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.atletastext{
+  color: var(--Gray-2, #4F4F4F);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.showcategoria{
+  color: var(--A1, #0095D9);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+/*INFO CARD STYLE END */
+
+
+
+/* REGISTRANTION TABLE STYLE BEGINING */
+.registration-table{
+  display: flex;
+  width: 956px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+}
+
+.updates{
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 8px 8px 0px 0px;
+  background: var(--Fill, #F7F7F7);
+}
+
+.inscricoestext{
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 8px 8px 0px 0px;
+  background: var(--Fill, #F7F7F7);
+  
+  color: var(--Gray-1, #333);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.athletes-table{
+  display: flex;
+  padding-top: 2px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.athlete-data{
+  display: flex;
+  padding: 0px 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Primary-Gray, #DFE2E7);
+}
+
+.athlete{
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.textos{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.nomeatleta{
+  color: var(--Gray-1, #333);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18.862px;
+}
+
+.cursocategoria{
+  color: var(--Gray-1, #333);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.infos{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.top{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.status{
+  display: flex;
+  padding: 2px 6px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: #E7FFF1;
+  
+  color: var(--Green-1, #219653);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.tempo{
+  display: flex;
+  width: 17px;
+  height: 18.982px;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--Gray-3, #828282);
+  
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* REGISTRANTION TABLE STYLE END */
+
+/* CONTENT BEGINING*/
+.content{
+  margin-left: 200px;
+  padding-top: 32px;
+}
+.breadcrumb p:first-child{
+  color: var(--cor-azul);
+}
+.content-header h3{
+  border-bottom: 1px solid #BBB;
+  padding: 0 0 18px 10px;
+  margin-bottom: 32px;
+  color: var(--cor-cinza-fundo);
+}
+.form{
+  width: 593px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+.formopcoes{
+  margin-left: 24px;
+}
+.nome{
+  max-width: 321px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+.nome p{
+  margin-bottom: 8px;
+}
+.nome input{
+  width: 321px;
+  height: 43px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  padding-left: 16px;
+}
+
+.tipo{
+  max-height: 99px;
+  margin-bottom: 24px;
+}
+.tipo .opcoes{
+  height: 72px;
+  padding: 12px 16px;
+}
+
+.modalidadecadastro{
+  margin-bottom: 24px;
+}
+
+.modalidadecadastro .form-select{
+  width: 200px;
+  height: 46px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-5, #E0E0E0);
+  margin-top: 8px;
+}
+.content .btn-2{
+  justify-content: center;
+  width: 164px;
+  margin: 32px 0 0 429px;
+}
+.cadastrar{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--cor-branca);
+}
